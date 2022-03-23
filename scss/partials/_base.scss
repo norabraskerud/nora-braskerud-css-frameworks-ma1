@@ -1,0 +1,28 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: getColour(grey);
+    font-family: $font-primary;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: lighten(getColour(text), 10%);
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}

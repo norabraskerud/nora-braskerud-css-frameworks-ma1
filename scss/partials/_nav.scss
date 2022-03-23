@@ -1,0 +1,17 @@
+.navbar {
+    background: getColour(beige) !important;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: getColour(text) !important;
+}
+
+.active {
+    color: getColour(accent) !important;
+}

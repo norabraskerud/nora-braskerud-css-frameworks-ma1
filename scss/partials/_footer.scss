@@ -1,0 +1,25 @@
+.footer {
+    background: getColour(beige);
+    margin-top: 2em;
+    font-size: 0.8em;
+    color: darken(getColour(beige), 40%);
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+
+    &__item--mail {
+        color: darken(getColour(beige), 40%);
+
+        &:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,15 @@
+$font-primary: "open sans", sans-serif;
+
+$tablet-width: 600px;
+
+$colours: (
+    text: #262626,
+    accent: #C32C72,
+    white: #FFFFFF,
+    grey: #E5E5E5,
+    beige: #F4F3EE,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}

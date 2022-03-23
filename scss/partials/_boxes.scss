@@ -1,0 +1,27 @@
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    margin: 2rem 1rem;
+    grid-gap: 2rem;
+    justify-content: center;
+
+    &__item {
+        border-radius: 15px;
+        background: getColour(beige);
+        border: none;
+        position: relative;
+        padding-top: 100%;
+
+        &--border { 
+            @extend .boxes__item;
+            background: getColour(white);
+            border: 2px solid getColour(accent);
+        }
+
+        &--pink {
+            @extend .boxes__item;
+            background: getColour(accent);
+            border: 2px solid getColour(white);
+        }
+    }
+}
